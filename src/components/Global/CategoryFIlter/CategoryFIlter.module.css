@@ -1,0 +1,38 @@
+.filter{
+    margin-bottom: 30px;
+}
+.filter__header{
+    padding: 20px 26px;
+    background-color: var(--main-web-color);
+}
+.filter__header-heading{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+.filter__content{
+    padding: 20px 28px;
+    background: #f1f6f7;
+}
+.filter__content-items{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.filter__content-radio{
+    width: 17px;
+    height: 17px;
+    margin-inline-end: 10px;
+    background-color: transparent!important;
+    transition:var(--transition-effect);
+    accent-color: var(--main-web-color);
+}
+.filter__content-radio:checked{
+    border: 8px solid #384aeb;
+}
+.filter__content-radio-label{
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+}

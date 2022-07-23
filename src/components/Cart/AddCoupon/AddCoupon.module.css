@@ -1,0 +1,53 @@
+
+.cart-coupon__cont{
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+.cart-coupon__form{
+    display: flex;
+}
+.cart-coupon__input{
+    width: 200px;
+    padding: 0 10px 0 18px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    height: 40px;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: normal;
+    margin-inline-end: -3px;
+    outline: none;
+    box-shadow: none;
+    margin-inline-start: auto;
+}
+.cart-coupon__apply-coupon{
+    height: 40px;
+    line-height: 38px;
+    text-transform: uppercase;
+    background: #384aeb;
+    padding: 0 38px;
+    margin-inline-end: 5px;
+    margin-inline-start: 10px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+}
+.cart-coupon__total-price-cont{
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+.cart-coupon__total-price{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-inline-start: auto;
+}
+.cart-coupon__total-price-title{
+    font-size: 15px;
+    color: #222;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 0;
+    margin-inline-end: 180px;
+}

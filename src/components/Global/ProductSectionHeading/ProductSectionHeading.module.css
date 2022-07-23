@@ -1,0 +1,21 @@
+
+.trending-products__heading-info{
+    font-size: 16px; 
+    color: #777;
+}
+.trending-products__heading-title{
+    font-size: 40px;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.trending-products__heading-span{
+    border-bottom: 2px solid var(--main-web-color);
+    padding-bottom: 12px
+}
+@media (max-width:426px) {
+    .trending-products__heading-title{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+}

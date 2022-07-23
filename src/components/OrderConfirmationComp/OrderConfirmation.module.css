@@ -1,0 +1,62 @@
+#order-confirmaition{
+    padding: 100px 0 0;
+}
+.order-confirmaition__heading{
+    font-size: 18px;
+    color: #384aeb;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.order-confirmaition__content-container{
+    padding: 38px 0 38px 38px;
+    background: #f1f6f7;
+    margin-bottom: 30px;
+}
+.order-confirmaition__content-heading{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    border-color: #ddd;
+    color: black;
+}
+.order-confirmaition__content-item{
+    display: flex;
+    margin-bottom: 5px;
+}
+.order-confirmaition__content-desc{
+    margin-inline-end: 25px;
+    min-width: 130px;
+}
+.order-confirmaition__content-value{
+    color: #222;
+}
+.order-confirmaition__content-heading{
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.order-confirmaition__content-container--table{
+    background-color:#e5ecee;
+}
+.order-confirmaition__table--color{
+    color:#777
+}
+.order-confirmaition__table{
+    border-top: 2px solid #dee2e6;
+    font-weight: bold;
+}
+.order-confirmaition__table .table thead tr th{
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    font-family: "Oswald",sans-serif;
+    font-weight: normal;
+    color: #222;
+}
+.order-confirmaition__table td, .order-confirmaition__table th{
+    border:0
+}
+.order-confirmaition__table tfoot tr:last-child {
+    border-top: 2px solid #dee2e6;
+}

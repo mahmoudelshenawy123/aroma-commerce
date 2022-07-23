@@ -1,0 +1,25 @@
+.cart-proceed__cont{
+    padding: 50px 0;
+    display: flex;
+}
+.cart-proceed__button{
+    line-height: 38px;
+    background: #f1f6f7;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    padding: 0 44px;
+    display: inline-block;
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: var(--transition-effect);
+}
+.cart-proceed__button--buy{
+    background: var(--main-web-color);
+    color: white;
+}
+.cart-proceed__button--continue{
+    margin-inline-start: auto;
+    margin-inline-end: 20px;
+    color: black;
+}

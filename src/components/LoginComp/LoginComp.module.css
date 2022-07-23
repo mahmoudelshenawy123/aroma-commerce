@@ -1,0 +1,133 @@
+#login-register{
+    padding: 150px 0;
+}
+.login-register__content{
+    min-height:570px;
+    box-shadow: 0 10px 40px 0 rgb(56 74 235 / 10%);
+}
+#login-register .row{
+    min-height:inherit;
+}
+.login-register__other-way{
+    display: flex;
+    min-height: 100%;
+    background-color: var(--main-web-color);
+    opacity: 0.9;
+}
+.login-register__other-container{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+}
+.login-register__other-heading{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.login-register__other-desc{
+    max-width: 390px;
+    margin: 0 auto 28px;
+    color: #fff;
+}
+.login-register__other-navigate {
+    padding: 13px 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: auto;
+    transition: var(--transition-effect);
+}
+.login-register__other-navigate:hover{
+    background-color:#c5322d;
+    border: 1px solid #c5322d;
+    color: white;
+}
+.login-register__other-navigate:hover {
+    color: #fff;
+}
+.login-register__form{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.login-register__form form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+} 
+.login-register__form-heading{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin: 50px 0 70px;
+}
+.login-register__form-input-cont{
+    position: relative;
+    margin-bottom: 20px;
+    transition:var(--transition-effect)
+}
+.login-register__form-input-cont::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--main-web-color);
+    height: 2px;
+    transition:var(--transition-effect)
+}
+.login-register__form-input-cont:hover::before{
+    width: 100%;
+    z-index: 100;
+    transition:var(--transition-effect)
+}
+.login-register__form-input{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    color: #999;
+    /* margin-bottom: 20px */
+}
+
+
+.login-register__form-remeber-cont{
+    display: flex;
+    align-items: center;
+}
+.login-register__form-remeber-id{
+    width: 15px;
+    height: 15px;
+}
+.login-register__form-remeber-label{
+    margin: 0;
+    margin-inline-start:14px
+}
+.login-register__form-submit{
+    background-color: var(--main-web-color);
+    color: white;
+    border: 1px solid var(--main-web-color);
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: var(--transition-effect);
+}
+.login-register__form-submit:hover{
+    background-color: transparent;
+    color: var(--main-web-color);
+    border: 1px solid var(--main-web-color);
+}
+.login-register__form-forget{
+    color: #777;
+}

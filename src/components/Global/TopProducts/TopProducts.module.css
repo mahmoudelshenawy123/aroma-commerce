@@ -1,0 +1,31 @@
+#top-product{
+    padding:100px 0;
+}
+.product__container{
+    padding: 12px 20px 10px 30px;
+    border: 1px solid #eee;
+}
+.product__info-cont{
+    display: flex;
+    margin-bottom: 20px;
+}
+.product__info-img{
+    margin-inline-end: 10px;
+    width: 70px;
+    height: 70px;
+}
+.product__info-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product__info-title{
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+.product__info-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+}

@@ -1,0 +1,101 @@
+#main-navbar{
+    background-color:var(--main-background-color);
+    padding:20px 0;
+}
+.main-navbar__link.active{
+    color:var(--main-web-color)!important;
+}
+.main-navbar__link{
+    color:var(--main-text-color)!important;
+    font-size: 18px;
+    font-family: 'fangsong';
+    margin-inline-end: 30px;
+    transition: var(--transition-effect);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.main-navbar__register{
+    border: 1px solid #eee;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-text-color)!important;
+    font-family: cursive;
+    transition: var(--transition-effect)
+}
+.main-navbar__link:hover{
+    color:var(--main-web-color)!important;
+    /* font-size: 20px; */
+}
+.main-navbar__register:hover{
+    border-color:var(--main-web-color);
+}
+.main-navbar__feature{
+    padding: 8px;
+}
+.main-navbar__feature--cart{
+    position: relative;
+    margin-inline-end: 50px; 
+}
+.main-navbar__feature-cart-count{
+    --size: 18px;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    min-width: var(--size);
+    min-height: var(--size);
+    background-color: var(--main-web-color);
+    color: var(--second-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1px;
+    right: 3px;
+    border-radius: 50%;
+}
+
+.main-navbar__feature:hover .main-navbar__icon{ 
+    color:var(--main-web-color)
+}
+.main-navbar__icon{
+    width:25px;
+    height:25px;
+    color: var(--main-text-color);
+    transition: var(--transition-effect);
+}
+.main-navbar__toggle-icon{
+    color:var(--main-web-color);
+    width:30px;
+}
+.main-navbar__toggle-button{
+    border:0;
+    display:none;
+    background-color:transparent
+}
+.main-navbar__toggle-button:focus ,.main-navbar__toggle-button:hover ,.main-navbar__toggle-button:active{
+    background-color:transparent;
+    box-shadow: none;
+}
+.dropdown-menu{
+    transition:var(--transition-effect)
+}
+.main-navbar__link--dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+
+
+
+@media (max-width:992px) {
+.main-navbar__toggle-button{
+    display: flex   
+}
+}
+
+

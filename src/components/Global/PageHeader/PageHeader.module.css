@@ -1,0 +1,32 @@
+#page-header{
+    background-color:#f1f6f7;
+    height: 50vh;
+}
+.page-header__content-container{
+    height: 100%;
+    display: flex;
+}
+.page-header__content{
+    margin: auto
+}
+.page-header__content-heading{
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.page-header__nav-links{
+    text-align: center;
+}
+.page-header__nav-links{
+    color:#777;
+}
+.page-header__nav-link{
+    color:#777;
+}
+.page-header__nav-link:hover{
+    color:#777;
+}
+.page-header__nav-page{
+    text-transform: capitalize;
+}

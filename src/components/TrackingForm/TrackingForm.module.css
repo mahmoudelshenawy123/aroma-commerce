@@ -1,0 +1,35 @@
+#tracking{
+    padding: 100px 0;
+}
+.tracking__form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.tracking__desc{
+    max-width: 80%;
+    color: #555;
+    margin-bottom: 25px;
+}
+.tracking__input{
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 0 15px;
+    outline: 0;
+}
+.tracking__input-submit{
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    outline: 0;
+    border: 1px solid var(--main-web-color);
+    background-color: var(--main-web-color);
+    color: white;
+    transition: var(--transition-effect);
+}
+.tracking__input-submit:hover{
+    background-color: transparent;
+    color: black;
+    
+}

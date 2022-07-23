@@ -1,0 +1,113 @@
+
+/***************side-navbar*******************/
+.side-navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    width: 0%;
+    transition: var(--transition-effect);
+    overflow: hidden;
+    height: 0%;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    z-index: 10000;
+    padding: 0;
+}
+.side-navbar--open{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+.side-navbar__content{
+    width: 70%;
+    background-color: var(--main-background-color);
+    height: 100%;
+    padding: 60px 0px;
+    overflow-y: auto;
+    text-align: start;
+    font-weight: bold;
+}
+.side-navbar__profile-cont{
+    padding: 0px 30px;
+    border-bottom: 1px solid #0000001F;
+}
+.side-navbar__overlayer{
+    width: 30%;
+    background-color: black;
+    height: 100%;
+    opacity: .8;
+}
+.side-navbar__nav-list{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.side-navbar__profile-img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 50%;
+    padding: 6px;
+    object-fit: contain;
+}
+.side-navbar__profile-name{
+    color: var(--main-text-color);
+    font-family: 'PoppinsMedium';
+}
+.side-navbar__nav-item{
+    padding: 20px 40px;
+    transition:var(--transition-effect);
+}
+.side-navbar__nav-link{
+    transition:var(--transition-effect)
+}
+.side-navbar__nav-item:hover .side-navbar__nav-link{
+    color: var(--main-web-color);
+    text-decoration: none;
+}
+.side-navbar__nav-item.active{
+    background: var(--main-web-color);
+}
+.side-navbar__nav-item.active .side-navbar__nav-link{
+    color: var(--second-text-color);
+}
+.side-navbar__nav-list .side-navbar__nav-item:last-of-type{
+    border-bottom: 1px solid #0000001F;
+}
+.side-navbar__nav-link{
+    color:var(--main-text-color);
+    transition: var(--transition-effect);
+}
+.side-navbar__logOut-cont{
+    padding:30px;
+}
+.side-navbar__logOut{
+    background-color: transparent;
+    border: 0;
+    color: var(--main-web-color);
+    margin: auto;
+    cursor: pointer;
+}
+.side-navbar__logOut-icon{
+    margin-inline-end: 5px;
+}
+.side-navbar__content::-webkit-scrollbar{
+    width: 8px;
+}
+.side-navbar__content::-webkit-scrollbar-thumb{
+    background: var(--main-web-color);
+}
+.main-navbar__toggle-button{
+    background: transparent!important;
+    box-shadow: none!important;
+}
+@media(min-width:992px){
+    .side-navbar{
+        width:0!important;
+    }
+}

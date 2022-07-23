@@ -1,0 +1,104 @@
+#header{
+    position: relative;
+}
+#header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width:30%;
+    height:100%;
+    background-color: var(--main-web-color)
+}
+body[dir='rtl'] #header::before{
+    left: initial;
+    right: 0;
+}
+.header__img-cont{
+    display: flex;
+    height: 100%;
+    margin-inline-start: auto;
+}
+.header__img{
+    height: 90%;
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    top: 1px;
+    position: relative;
+}
+
+.header__info-cont{
+    text-align: start;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.header__info-title{
+    font-size: 30px;
+    font-family: 'Open Sans',sans-serif;
+    color: #555;
+    margin-bottom: 12px;
+}
+.header__info-heading{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color:black;
+}
+.header__info-desc{
+    color:#777;
+    margin-bottom: 30px;
+}
+.header__open-cat{
+    width: 180px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-web-color);
+    transition: var(--transition-effect);
+    color: var(--second-text-color);
+    box-shadow: none;
+    border-radius: 25px;
+}
+.header__open-cat:hover{
+    border: 1px solid var(--main-web-color);
+    color:var(--main-text-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+.header__open-cat:focus{
+    box-shadow: none;
+}
+
+
+@media(max-width:1024px){
+    .header__img{
+        width: 80%;
+        margin-inline-start: auto;
+    }
+    .header__info-title{
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .header__info-heading{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .header__info-desc{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:577px){
+    #header{
+        padding: 40px 20px 40px 20px;
+    }
+    #header:before{
+        width: 5%;
+    }
+
+}

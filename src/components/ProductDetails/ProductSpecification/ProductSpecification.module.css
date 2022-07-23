@@ -1,0 +1,15 @@
+#product-specification{
+    width: 100%;
+}
+.product-specification__row{
+    border-bottom: 1px solid #eee;
+}
+.product-specification__cell{
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 0;
+    white-space: nowrap;
+    padding: 14px 65px!important;
+    border-top:none!important;
+}
