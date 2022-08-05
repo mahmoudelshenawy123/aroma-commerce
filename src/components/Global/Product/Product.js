@@ -19,9 +19,6 @@ function Product(props) {
         }
         dispatch(addProductToCart(productData))
     }
-    // let addToFavorite=()=>{
-    //     dispatch(addProductToFavorite())
-    // }
   return (
     <div className={styles['product']}>
         <div className={styles['product__img-cont']}>

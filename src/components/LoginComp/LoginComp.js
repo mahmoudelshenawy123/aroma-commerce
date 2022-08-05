@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Col, Container,  Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import styles from './LoginComp.module.css'
-import axiosConfig from 'axiosConfig.js'
+import axiosConfig from 'features/axiosConfig.js'
 import { useTranslation } from 'react-i18next'
-    
+import loginApi from 'api/login'
     function LoginComp() {
     const {t} =useTranslation()
     const [login,setLogin] =useState({email:'',password:''})
@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
     }
     let submitForm=(event)=>{
         event.preventDefault()
-            axiosConfig.post('/posts',{login}).then(res=>{console.log(res)}).catch(err=>console.log(err.message))
+        loginApi(login)
     }
   return (
     <section id={styles["login-register"]}>

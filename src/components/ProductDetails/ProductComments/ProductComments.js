@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next'
 
 function ProductComments() {
     const {t} =useTranslation()
+    console.log(t('reply'))
+    // console.log(useTranslation)
   return (
     <>
         <section id={styles["product-comments"]}>

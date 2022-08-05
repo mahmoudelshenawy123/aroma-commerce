@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CategoryFIlter from '../Global/CategoryFIlter/CategoryFIlter'
 import Product from '../Global/Product/Product'
 import styles from "./ShopCategoriesComp.module.css"
 import { useTranslation } from 'react-i18next'
 import TopProducts from '../Global/TopProducts/TopProducts'
+import allProductsApi from 'api/allProducts.js'
 function ShopCategoriesComp() {
     const {t} =useTranslation()
 
@@ -19,6 +20,11 @@ function ShopCategoriesComp() {
         {id:8,name:t('iphone'),cat:t('accessories_items'),image:'https://i.ibb.co/KFXtg1W/product7.webp',price:'150'},
         {id:9,name:t('iphone'),cat:t('accessories_items'),image:'https://i.ibb.co/PgZ8cfX/product8.webp',price:'150'},
     ]
+    // let [prod,setProducts] =useState([])
+    let prod 
+    useEffect(()=>{
+         allProductsApi()
+    })
   return (
     <section id={styles['shop-categories']}>
         <Container>
@@ -51,6 +57,7 @@ function ShopCategoriesComp() {
             </Row>
             <TopProducts/>
         </Container>
+        {prod}
     </section>
   )
 }

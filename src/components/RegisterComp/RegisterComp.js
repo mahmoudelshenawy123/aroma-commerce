@@ -1,20 +1,46 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import styles from './RegisterComp.module.css'
-import axiosConfig from 'axiosConfig.js'
 import { useTranslation } from 'react-i18next'
+import src from 'assets/icons/loading.gif'
+import Tos from 'components/Tos'
+import registerApi from 'api/register'
+import { useDispatch, useSelector } from 'react-redux'
+import {fetchUserData} from 'reduxCont/cart/cartActions'
 
 function RegisterComp() {
     const {t} =useTranslation()
-    const [register,setRegister] =useState({name:'',email:'',password:'',confirmpass:''})
+    const submitButton =useRef(null)
+    const [loading,setLoading] =useState(false)
+    const [register,setRegister] =useState({name:'',email:'',password:'',password_confirmation:''})
+    const dispatch = useDispatch()
+    const sta =useSelector(state=>state)
+    console.log(sta)
     let updateForm=(event)=>{
         setRegister({...register,[event.target.name]:event.target.value})
     }
-    let submitForm=(event)=>{
+    // let submitForm=(event)=>{
+    //     event.preventDefault()
+    //     console.log('adsdasas')
+    //     fetchUserData(dispatch)
+    // }
+    let submitForm= async (event)=>{
         event.preventDefault()
-        if(register.password ===register.confirmpass){
-            axiosConfig.post('/posts',{register}).then(res=>{console.log(res)}).catch(err=>console.log(err.message))
+        if(register.password ===register.password_confirmation){
+            setLoading(true)
+            submitButton.current.disabled = true
+
+            let registerResponse =await registerApi(register)
+            
+            console.log({registerResponse})
+            if(registerResponse.status){
+                setLoading(false)
+                submitButton.current.disabled = false
+            }else{
+                setLoading(false)
+                submitButton.current.disabled = false
+            }
         }else{
             alert('password not equal to confrim pass')
         }
@@ -44,14 +70,20 @@ function RegisterComp() {
                                 <input type='password' className={styles['login-register__form-input']}placeholder={t('password')} name='password' onChange={(event)=>{updateForm(event)}} value={register.password}/>
                             </div>
                             <div className={styles['login-register__form-input-cont']}>
-                                <input type='password' className={styles['login-register__form-input']}placeholder={t('confirm_password')} name='confirmpass' onChange={(event)=>{updateForm(event)}} value={register.confirmpass}/>
+                                <input type='password' className={styles['login-register__form-input']}placeholder={t('confirm_password')} name='password_confirmation' onChange={(event)=>{updateForm(event)}} value={register.password_confirmation}/>
                             </div>
                             <div className={styles['login-register__form-remeber-cont']}>
                                 <input type='checkbox' id={styles['login-register__form-remeber-id']} className={styles['login-register__form-remeber']}/>
                                 <label htmlFor={styles["login-register__form-remeber-id"]} className={styles['login-register__form-remeber-label']}>{t('keep_me_logged')}</label>
                             </div>
-                            <input type='submit' className={styles['login-register__form-submit']} value={t('register')}/>
+                            <button type='submit' className={styles['login-register__form-submit']} ref={submitButton}>
+                            {
+                                loading ?<img src={src} alt="loading" className={styles['loading__icon']}/>: t('register')
+                            }
+                            </button>
+                            
                         </form>
+                        {/* <Tos></Tos> */}
                     </Col>
                 </Row>
             </div>

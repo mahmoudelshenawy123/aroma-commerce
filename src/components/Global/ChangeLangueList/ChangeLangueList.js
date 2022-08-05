@@ -36,10 +36,10 @@ function ChangeLangueList() {
     useEffect(()=>{
         document.body.dir=currentLanguage.dir ||'ltr'
     },[currentLanguage])
-    let changeLanguage=(code)=>{
+    let changeLanguageee=(code)=>{
         i18next.changeLanguage(code)
 
-        dispatch(changeLanguagee(code))
+        changeLanguagee(dispatch,code)
     }
     const Lang =useSelector(state=>state.lang)
   return (
@@ -47,13 +47,13 @@ function ChangeLangueList() {
         <CustomDropdownMenu linkClass={styles['main-navbar__link']} title={t(`${Lang}`)} >
         
             <li className={styles2["custom-dropdown__item"]}>
-                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguage('ar')}}>العربية</button>
+                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguageee('ar')}}>العربية</button>
             </li>
             <li className={styles2["custom-dropdown__item"]}>
-                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguage('en')}}>English</button>
+                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguageee('en')}}>English</button>
             </li>
             <li className={styles2["custom-dropdown__item"]}>
-                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguage('fr')}}>Franais</button>
+                <button className={styles2["custom-dropdown__link"]} onClick={()=>{changeLanguageee('fr')}}>Franais</button>
             </li>
         </CustomDropdownMenu>
     </>

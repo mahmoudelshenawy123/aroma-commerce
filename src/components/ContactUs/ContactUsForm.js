@@ -4,7 +4,7 @@ import styles from './ContactUsForm.module.css'
 import { ReactComponent as HomeIcon} from 'assets/icons/Home.svg'
 import { ReactComponent as HeadPhoneIcon} from 'assets/icons/headPhone.svg'
 import { ReactComponent as MailIcon} from 'assets/icons/mail.svg'
-import axiosConfig from 'axiosConfig.js'
+import axiosConfig from 'features/axiosConfig.js'
 import { useTranslation } from 'react-i18next'
 
 function ContactUsForm() {
