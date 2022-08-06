@@ -3,9 +3,11 @@ import PageHeader from '../components/Global/PageHeader/PageHeader'
 import TrackingForm from '../components/TrackingForm/TrackingForm'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 
 function Tracking() {
   const {t} =useTranslation()
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

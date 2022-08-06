@@ -8,6 +8,8 @@
     color: #121212;
     font-weight: bold;
     margin-bottom: 50px;
+    font-family: 'Roboto-Bold',sans-serif;
+
 }
 .trending-products__heading-span{
     border-bottom: 2px solid var(--main-web-color);

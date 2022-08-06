@@ -1,0 +1,55 @@
+.check-out__details{
+    padding-bottom: 50px;
+}
+
+.check-out__billing-title{
+    font-size: 18px;
+    color: #222;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: "Roboto-Bold",sans-serif;
+}
+.check-out__billing-title--margin{
+    margin-bottom:0
+}
+.check-out__billing-form{
+    display: flex;
+    flex-direction: column;
+}
+.check-out__billing-input{
+    outline: 0;
+    margin-bottom: 30px;
+    height: 40px;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+.check-out__billing-input--height{
+    height: 300px;
+}
+.check-out__order-cont{
+    background: #e8f0f2;
+    padding: 30px 15px;
+    font-size:14px;
+    color:#777
+}
+.check-out__billing-table thead th{
+    border-bottom:0
+}
+.check-out__billing-table td{
+    color:#777
+}
+.check-out__billing-submit{
+    width: 100%;
+    height: 50px;
+    outline: 0;
+    border-radius: 50px;
+    background-color: var(--main-web-color);
+    color: white;
+    transition: var(--transition-effect);
+    border: 1px solid var(--main-web-color);
+}
+.check-out__billing-submit:hover{
+    background-color:white;
+    color: black;
+}

@@ -4,9 +4,11 @@ import LoginComp from '../components/LoginComp/LoginComp'
 // import RegisterComp from '../components/RegisterComp/RegisterComp'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 
 function Login() {
   const {t} =useTranslation()
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

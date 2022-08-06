@@ -12,7 +12,9 @@ import TendingProducts from '../components/Home/TendingProducts/TendingProducts'
 import Header from 'components/Home/header/Header'
 import Loading from 'components/Global/loading/Loading'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 function Home() {
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

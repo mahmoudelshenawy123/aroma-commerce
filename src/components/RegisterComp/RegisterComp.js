@@ -49,7 +49,7 @@ function RegisterComp() {
     <section id={styles["login-register"]}>
         <Container>
             <div className={styles['login-register__content']}>
-                <Row>
+                <Row className={styles['row']}>
                     <Col md='6' className={styles['login-register__other-way']}>
                         <div className={styles['login-register__other-container']}>
                             <h3 className={styles['login-register__other-heading']}>{t('already_have_an_account')}</h3>

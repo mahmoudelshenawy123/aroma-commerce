@@ -3,9 +3,11 @@ import ContactUsForm from '../components/ContactUs/ContactUsForm'
 import PageHeader from '../components/Global/PageHeader/PageHeader'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 
 function ContactUs() {
   const {t} =useTranslation()
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

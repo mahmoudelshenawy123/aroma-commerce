@@ -6,9 +6,11 @@ import ProductOperations from '../components/ProductDetails/ProductOperations/Pr
 import ProductView from '../components/ProductDetails/ProductView/ProductView'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 
 function ProductDetails() {
   const {t} =useTranslation()
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

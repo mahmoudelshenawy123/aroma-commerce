@@ -19,7 +19,7 @@ import loginApi from 'api/login'
     <section id={styles["login-register"]}>
         <Container>
             <div className={styles['login-register__content']}>
-                <Row>
+                <Row className={styles['row']}>
                     <Col lg='6' className={styles['login-register__other-way']}>
                         <div className={styles['login-register__other-container']}>
                             <h3 className={styles['login-register__other-heading']}>{t('new_to_our_website')}</h3>
@@ -42,7 +42,7 @@ import loginApi from 'api/login'
                             </div>
                             <input type='submit' className={styles['login-register__form-submit']} value={t('log_in')}/>
                         </form>
-                        <NavLink to='/forget' className={styles['login-register__form-forget']}>{t('forgot_password?')}</NavLink>
+                        {/* <NavLink to='/forget' className={styles['login-register__form-forget']}>{t('forgot_password?')}</NavLink> */}
                     </Col>
                 </Row>
             </div>

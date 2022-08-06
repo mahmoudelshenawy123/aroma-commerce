@@ -50,6 +50,8 @@
     margin-bottom: 5px;
     transition: var(--transition-effect);
     text-transform: capitalize;
+    font-family: 'Roboto-Bold',sans-serif;
+
 }
 .product:hover .product__info-name{
     color:var(--main-web-color);

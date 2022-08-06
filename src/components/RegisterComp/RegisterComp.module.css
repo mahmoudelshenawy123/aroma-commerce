@@ -5,7 +5,7 @@
     min-height:570px;
     box-shadow: 0 10px 40px 0 rgb(56 74 235 / 10%);
 }
-#login-register .row{
+.login-register__content .row{
     min-height:inherit;
 }
 .login-register__other-way{
@@ -25,6 +25,8 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Roboto-Bold',sans-serif;
+
 }
 .login-register__other-desc{
     max-width: 390px;
@@ -64,6 +66,7 @@
     color: black;
     font-weight: bold;
     margin: 50px 0 70px;
+    font-family: 'Roboto-Bold',sans-serif;
 }
 .login-register__form-input-cont{
     position: relative;

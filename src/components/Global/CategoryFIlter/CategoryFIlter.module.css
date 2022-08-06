@@ -10,6 +10,7 @@
     margin: 0;
     font-weight: bold;
     color: white;
+    font-family: 'Roboto-Bold',sans-serif;
 }
 .filter__content{
     padding: 20px 28px;

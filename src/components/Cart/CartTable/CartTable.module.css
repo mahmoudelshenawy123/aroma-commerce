@@ -2,7 +2,9 @@
 .cart-table{
     width:100%;
 }
-
+.cart-table thead th {
+    font-family: 'Roboto-Bold',sans-serif;
+}
 .cart-table thead tr {
     border-top: 0;
     font-size: 16px;
@@ -35,7 +37,7 @@
 .table__product-price{
     font-size: 15px;
     color: #222;
-    font-family: "Roboto",sans-serif;
+    font-family: 'Roboto-Bold',sans-serif;
     margin-bottom: 0;
     font-weight: bold;
 }

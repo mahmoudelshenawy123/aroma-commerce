@@ -4,9 +4,11 @@ import SubScribe from '../components/Home/SubScribe/SubScribe'
 import ShopCategoriesComp from '../components/ShopCategoriesComp/ShopCategoriesComp'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
+import useSrollToTop from 'hooks/useSrollToTop'
 
 function ShopCategories() {
   const {t} =useTranslation()
+  useSrollToTop()
   return (
     <motion.div 
     init={{opacity:0}}

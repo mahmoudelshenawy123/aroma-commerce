@@ -7,8 +7,7 @@
 }
 .main-navbar__link{
     color:var(--main-text-color)!important;
-    font-size: 18px;
-    font-family: 'fangsong';
+    font-size: 16px;
     margin-inline-end: 30px;
     transition: var(--transition-effect);
     display: flex;
@@ -24,8 +23,9 @@
     align-items: center;
     justify-content: center;
     color: var(--main-text-color)!important;
-    font-family: cursive;
-    transition: var(--transition-effect)
+    /* font-family: cursive; */
+    transition: var(--transition-effect);
+    font-weight:bold
 }
 .main-navbar__link:hover{
     color:var(--main-web-color)!important;
